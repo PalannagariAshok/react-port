@@ -1,6 +1,6 @@
 # Personal Portfolio Website built with React v16
 
-(https://portfolio-palannagariashok.vercel.app/)
+[![Screenshot](/public/social-image.png?raw=true)](https://portfolio-palannagariashok.vercel.app/)
 
 - built using [React](https://reactjs.org)
 - bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
