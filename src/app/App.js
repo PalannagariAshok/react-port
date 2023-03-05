@@ -1,11 +1,10 @@
 import React, { lazy } from "react";
 
-import { Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HelmetMeta } from "./HelmetMeta";
 import { ThemeProvider } from "../components/theme/ThemeProvider";
 import { CssBaseline } from "@material-ui/core";
 import { logCredits } from "../utils/logCredits";
-import { HashRouter as Router } from "react-router-dom";
 
 import { Home } from "../pages/Home";
 
