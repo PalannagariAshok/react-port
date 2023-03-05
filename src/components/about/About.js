@@ -23,7 +23,7 @@ export const About = () => {
   const aboutme = `I'm ${FirstName} ${LastName}, a multidisciplinary 
                   designer & developer. I'm always down for something new and challenging!
                   I'm here to help you create beautifully formatted websites. 
-                  My projects mostly includes web development.`;
+                  My projects mostly includes web & mobile development.`;
 
   return (
     <section id="about">
@@ -32,9 +32,10 @@ export const About = () => {
           <div className="_img"
             style={{ 
               background: "url(" + profile + ")",
-              backgroundSize: 'contain',
+              backgroundSize: '100% 120%',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
+              // width:'100%',
             }}
           >
           </div>

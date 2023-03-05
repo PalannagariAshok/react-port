@@ -8,11 +8,11 @@ import { TextDecrypt } from "../content/TextDecrypt";
 import './Works.css';
 
 // Import ../../assets/recentprojects/
-import Portfolio from '../../assets/recentprojects/react-portfolio.png';
-import Veritru from '../../assets/recentprojects/veritru.png';
-import Lofo from '../../assets/recentprojects/lofo.png';
-import Startup from '../../assets/recentprojects/startup.png';
-import Lacalle from '../../assets/recentprojects/lacalle.png';
+import Portfolio from '../../assets/recentprojects/react-portfolio.svg';
+import Veritru from '../../assets/recentprojects/confluence1.svg';
+import Lofo from '../../assets/recentprojects/diquark.svg';
+import Startup from '../../assets/recentprojects/compost.svg';
+import Lacalle from '../../assets/recentprojects/causeway.svg';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -27,46 +27,48 @@ export const Works = () => {
   const [projects, setProjects] = useState([
     { 
       id: 1,
-      title: 'React Portfolio', 
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
+      title: 'ConfluenceEdu Project', 
+      description: `A Customized Web Application to manage a Study
+       Abroad Business including Analytics
+      .`,
       alter: 'React Portfolio',
-      image: `${Portfolio}`,
+      image: `${Veritru}`,
+      href:"https://dashboard.confluenceedu.com/"
     },
     { 
       id: 2,
-      title: 'VeriTru Project', 
-      description: `An advocacy project website built using
-      MEAN stack with fact-checking tool to promote actions against
-      fake news.`,
-      alter: 'VeriTru Project',
-      image: `${Veritru}`,
+      title: 'Wishwa Project', 
+      description: `A Web Application for Crowd Funding. Support
+      for designing and developing the finance module.`,
+      alter: 'Wishwa Project',
+      image: `${Portfolio}`,
+      href:"https://wishwa.org/"
     },
     { 
       id: 3,
-      title: 'LoFo Project', 
-      description: `Logistics and Forwarding website built using
-      ReactJS to design and develop its front-end.`,
-      alter: 'LoFo Project',
+      title: 'Diquark Project', 
+      description: `An IoT Ecosystem with Admin Dashboard, User Dashboard, Android and
+      iOS Mobile Applications. The mobile applications act as companion
+      apps to the Diquark Secure IoT Device to view live data and
+      control the device.`,
       image: `${Lofo}`,
+      href:"https://diquarkproducts.com/"
     },
     { 
       id: 4,
-      title: 'Startup Project', 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
-      alter: 'Startup Project',
+      title: 'Compost Project', 
+      description: `Collaborated with AutoMac Technologies to provide various IIoT
+      Web Applications.`,
       image: `${Startup}`,
+      href:"https://automactechnologies.in/"
     },
     { 
       id: 5,
-      title: 'LaCalle Cafe', 
-      description: `A website project for the La Calle Cafe business
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
+      title: 'Causeway365 Project', 
+      description: `This application is developed in web & mobile, for Medical Staffing`,
       alter: 'Startup Project',
       image: `${Lacalle}`,
+      href:"https://causeway365.com/"
     },
   ]);
 
@@ -76,7 +78,9 @@ export const Works = () => {
         {projects.map((project) => (
           <div className="project" key={ project.id }>
             <div className="__img_wrapper">
-              <img src={ project.image } alt={ project.alter }/>
+              <a className="__img_wrapper" href={project.href} target="_blank">
+                <img src={ project.image } alt={ project.alter }/>
+              </a>
             </div>
             <div className="__content_wrapper">
               <h3 className="title">

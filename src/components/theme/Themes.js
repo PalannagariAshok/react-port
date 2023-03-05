@@ -39,7 +39,7 @@ export const LightTheme = responsiveFontSizes(
         fontWeight: 500,
         fontFamily: 'Roboto Mono, monospace',
       },
-      body: {
+      body1: {
         fontWeight: 500,
         fontFamily: 'Roboto Mono, monospace',
       },
@@ -137,7 +137,7 @@ export const DarkTheme = responsiveFontSizes(
         fontWeight: 500,
         fontFamily: 'Roboto Mono, monospace',
       },
-      body: {
+      body1: {
         fontWeight: 500,
         fontFamily: 'Roboto Mono, monospace',
       },
